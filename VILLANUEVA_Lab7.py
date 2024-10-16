@@ -14,7 +14,9 @@ else:
         if thirdGrade < 40 or thirdGrade > 100:
             print("Invalid input. Must be between 40 and 100")
         else:
-            averageGrade = (firstGrade + secondGrade + thirdGrade) / 3
+            prelimGrade = firstGrade * 0.3333
+            midtermGrade = secondGrade * 0.3333
+            finalsGrade = thirdGrade * 0.3333
             averageGrade = round(averageGrade)
             
             print()
