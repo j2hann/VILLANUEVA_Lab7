@@ -2,21 +2,22 @@ name = input("Enter your name: ")
 section = input("What is your section?: ")
 print()
 
-firstGrade = float(input("Enter your first grade: "))
+firstGrade = float(input("Enter your PRELIM Grade: "))
 if firstGrade < 40 or firstGrade > 100:
     print("Invalid input. Must be between 40 and 100")
 else:
-    secondGrade = float(input("Enter your second grade: "))
+    secondGrade = float(input("Enter your MIDTERM Grade: "))
     if secondGrade < 40 or secondGrade > 100:
         print("Invalid input. Must be between 40 and 100")
     else:
-        thirdGrade = float(input("Enter your third grade: "))
+        thirdGrade = float(input("Enter your FINALS Grade: "))
         if thirdGrade < 40 or thirdGrade > 100:
             print("Invalid input. Must be between 40 and 100")
         else:
             prelimGrade = firstGrade * 0.3333
             midtermGrade = secondGrade * 0.3333
             finalsGrade = thirdGrade * 0.3333
+            averageGrade = prelimGrade + midtermGrade + finalsGrade
             averageGrade = round(averageGrade)
             
             print()
